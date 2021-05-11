@@ -3,22 +3,12 @@
  * The main template file
  *
  *
- * @package marthem
+ * @package Marthem
  */
-?>
 
-<!DOCTYPE html>
-<html lang="en">
+get_header(); ?>
 
-    <head>
-        <meta charset="UTF-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Marthem by Jagopreneur</title>
-    </head>
+index
 
-    <body>
-
-    </body>
-
-</html>
+<?php //  load footer file
+get_footer();

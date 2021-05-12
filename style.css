@@ -14,3 +14,72 @@ License URI: http://www.gnu.org/licenses/gpl-2.0.html
 Text Domain: marthem
 Tags: user, blog, marketing, checkout, landingpage, elementor
 */
+
+/* navigation */
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+nav.navbar {
+  background-color: orange;
+  padding: 0px;
+  position: relative;
+  z-index: 1000;
+}
+nav.navbar > button.menu-toggler {
+  background-color: transparent;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20px;
+}
+ul.main-menu {
+  background-color: orange;
+  padding: 0px;
+  margin: 0px;
+  display: none;
+  position: absolute;
+  top: 0px;
+  padding-top: 50px;
+  z-index: -1;
+}
+ul.main-menu > li {
+  list-style: none;
+  width: 100vw;
+}
+ul.main-menu > li > a.menu-item {
+  font-family: 'Tajawal', sans-serif;
+  display: flex;
+  width: 100vw;
+  padding: 5px 15px;
+  text-decoration: none;
+  color: white;
+}
+ul.main-menu > li > a.menu-item:hover {
+  background-color: darkorange;
+}
+
+@media screen and (min-width: 768px) {
+  nav.navbar > button.menu-toggler {
+    display: none;
+  }
+  ul.main-menu {
+    display: flex;
+    margin: auto;
+    border-left: 0.5px solid rgb(255, 140, 0, 0.5);
+    position: relative;
+    padding-top: 0px;
+  }
+  ul.main-menu > li {
+    border-right: 0.5px solid rgb(255, 140, 0, 0.5);
+  }
+  ul.main-menu > li > a.menu-item {
+    padding: 3px 7px;
+  }
+  ul.main-menu > li,
+  ul.main-menu > li > a.menu-item {
+    width: fit-content;
+  }
+}
